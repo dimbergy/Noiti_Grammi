@@ -49,31 +49,6 @@
             </div>
 
 
-
-
-<!--            <table class="home-icon">-->
-<!--                <tr><td><i class="fa fa-home fa-fw pull-left fa-2x"></i></td></tr>-->
-<!--            </table>-->
-<!--            <div class="row" id="location">-->
-<!--                <div class="col-sm-6 col-md-12">-->
-<!--                    <div class="venue">-->
-<!--                        <a href="http://www.fournos-culture.gr/" target="_blank"><h2><i class="fa fa-link fa-fw pull-left fa-2x"></i>ΘΕΑΤΡΟ ΦΟΥΡΝΟΣ</h2></a>-->
-<!--                        <div class="data">-->
-<!--                            <div class="inside">-->
-<!--                                <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>Μαυρομιχάλη 168, Αθήνα</p>-->
-<!--                                <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>+30 210 6460748</p>-->
-<!--                                <p><i class="fa fa-calendar fa-fw pull-left fa-2x"></i>Σάββατο, Κυριακή</p>-->
-<!--                                <p><i class="fa fa-clock-o fa-fw pull-left fa-2x"></i>21:15</p>-->
-<!--                                <p><i class="fa fa-ticket fa-fw pull-left fa-2x"></i>12€ (γενική είσοδος), 10€ (γκρουπ 6 ατόμων), 5€ (άνεργοι & ατέλειες)</p>  </div>-->
-<!--                        </div>-->
-<!---->
-<!--                    </div>    </div>-->
-<!---->
-<!--            </div>-->
-<!---->
-<!---->
-<!---->
-
         </div>
 
 
@@ -187,14 +162,14 @@
 
                     <div class="row">
 
-                        <div class="col-md-3 marginbot-30">
+                        <div class="col-sm-6 col-md-4 col-lg-3 marginbot-30">
                             <a class="lightbox-gallery" data-lightbox-gallery="gallery-<?= $productions[$i]['id'] ?>" href="<?= $productions[$i]['href'] ?>" title="<?= $content['title_lower'] ?>">
                                 <img src="<?= $productions[$i]['src'] ?>" alt="<?= $productions[$i]['id'] ?>" class="img-responsive"></a>
                         </div>
 
                         <?php foreach (array_combine($productions[$i]['thumbs'], $productions[$i]['full']) as $thumb => $src): ?>
 
-                        <div class="col-md-3 marginbot-30">
+                        <div class="col-sm-6 col-md-4 col-lg-3 marginbot-30">
                     <a class="lightbox-gallery" data-lightbox-gallery="gallery-<?= $productions[$i]['id'] ?>" href="<?= $src ?>" title="<?= $content['title_lower'] ?>">
                         <img src="<?= $thumb ?>" alt="<?= $productions[$i]['id'] ?>" class="img-responsive"></a>
                         </div>
