@@ -38,7 +38,7 @@
 
     <div class="container">
 
-        <div class="row">
+        <div class="row main-row">
 
         <div class="col-xs-12 col-sm-4 col-md-4">
 
@@ -57,20 +57,20 @@
 
 
             <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#outline-<?= $i ?>"><i class="fa fa-bookmark-o pull-left fa-lg"></i><span><?= $tran['outline'] ?></span></a></li>
+                <li class="active"><a data-toggle="tab" class="tab-item" href="#outline-<?= $i ?>"><i class="fa fa-bookmark-o pull-left fa-lg"></i><span><?= $tran['outline'] ?></span></a></li>
 
                 <?php if($contents[$i]['venue'][0]['name'] != ""): ?>
-                <li><a data-toggle="tab" href="#venue-<?= $i ?>"><i class="fa fa-calendar-check-o pull-left fa-lg"></i><span><?= $tran['venues'] ?></span></a></li>
+                <li><a data-toggle="tab" class="tab-item" href="#venue-<?= $i ?>"><i class="fa fa-calendar-check-o pull-left fa-lg"></i><span><?= $tran['venues'] ?></span></a></li>
                 <?php endif; ?>
 
                 <?php if($content['reference'] != ''): ?>
-                <li><a data-toggle="tab" href="#references-<?= $i ?>"><i class="fa fa-newspaper-o pull-left fa-lg"></i><span><?= $tran['reference'] ?></span></a></li>
+                <li><a data-toggle="tab" class="tab-item" href="#references-<?= $i ?>"><i class="fa fa-newspaper-o pull-left fa-lg"></i><span><?= $tran['reference'] ?></span></a></li>
                 <?php endif; ?>
 
-                <li><a data-toggle="tab" href="#gallery-<?= $i ?>"><i class="fa fa-image pull-left fa-lg"></i><span><?= $tran['gallery'] ?></span></a></li>
+                <li><a data-toggle="tab" class="tab-item" href="#gallery-<?= $i ?>"><i class="fa fa-image pull-left fa-lg"></i><span><?= $tran['gallery'] ?></span></a></li>
 
                 <?php if($productions[$i]['video'][0] != ''): ?>
-                <li><a data-toggle="tab" href="#videos-<?= $i ?>"><i class="fa fa-video-camera pull-left fa-lg"></i><span><?= $tran['videos'] ?></span></a></li>
+                <li><a data-toggle="tab" class="tab-item" href="#videos-<?= $i ?>"><i class="fa fa-video-camera pull-left fa-lg"></i><span><?= $tran['videos'] ?></span></a></li>
                 <?php endif; ?>
             </ul>
 
@@ -162,14 +162,14 @@
 
                     <div class="row">
 
-                        <div class="col-sm-6 col-md-4 col-lg-3 marginbot-30">
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 marginbot-30">
                             <a class="lightbox-gallery" data-lightbox-gallery="gallery-<?= $productions[$i]['id'] ?>" href="<?= $productions[$i]['href'] ?>" title="<?= $content['title_lower'] ?>">
                                 <img src="<?= $productions[$i]['src'] ?>" alt="<?= $productions[$i]['id'] ?>" class="img-responsive"></a>
                         </div>
 
                         <?php foreach (array_combine($productions[$i]['thumbs'], $productions[$i]['full']) as $thumb => $src): ?>
 
-                        <div class="col-sm-6 col-md-4 col-lg-3 marginbot-30">
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 marginbot-30">
                     <a class="lightbox-gallery" data-lightbox-gallery="gallery-<?= $productions[$i]['id'] ?>" href="<?= $src ?>" title="<?= $content['title_lower'] ?>">
                         <img src="<?= $thumb ?>" alt="<?= $productions[$i]['id'] ?>" class="img-responsive"></a>
                         </div>
