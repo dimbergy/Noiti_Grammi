@@ -39,7 +39,7 @@ $contents = array(
     </ul>',
 
         'staff' => '<p><strong>Divised & Directed by</strong> <br />Olga Pozeli</p>
- <p><strong>Art direction</strong> <br />Kostis Davalis</p>
+ <p><strong>Art direction</strong> <br />Kostis Davaris</p>
  <br />
  <p><strong>Funded by</strong> <br />
     <a href="https://www.culture.gr/" target="_blank"><img src="img/logos/yppo-dark.png" alt="yppo-logo" class="yppo-logo"></a><br />
@@ -600,9 +600,9 @@ Familiar sounds. Songs stuck in your head. Smells.</p>
 
         'title_upper' => 'IS EVERYTHING I HAVE EVER FORGOTTEN AS BIG AS A HOUSE?',
 
-        'title_lower' => 'Is everthing I have ever forgotten as big as a house?',
+        'title_lower' => 'Is everything I have ever forgotten as big as a house?',
 
-        'title' => array('Is everthing I have ever forgotten as big as a house?'),
+        'title' => array('Is everything I have ever forgotten as big as a house?'),
 
         'subtitle' => array('devised theatre'),
 
@@ -619,7 +619,7 @@ Familiar sounds. Songs stuck in your head. Smells.</p>
     <blockquote>The beach or the mountain?</blockquote>
     <blockquote>Cinderella or Snowhite?</blockquote>',
 
-        'description' => ' <p>The performance <strong>Is everything I have ever forgotten as big as a house?</strong> is a barrage of questions that refer to the human condition. They are questions that we all inevitably ask ourselves at some point in our lives. They are "major" and "minor" questions, of a philosophical nature or not. They are questions that talk about love, fear, loneliness, the need to belong, the thirst for power, and about how people exploit each other.</p>
+        'description' => '<p>The performance <strong>Is everything I have ever forgotten as big as a house?</strong> is a barrage of questions that refer to the human condition. They are questions that we all inevitably ask ourselves at some point in our lives. They are "major" and "minor" questions, of a philosophical nature or not. They are questions that talk about love, fear, loneliness, the need to belong, the thirst for power, and about how people exploit each other.</p>
     <p>We draw our inspiration from an installation by Peter Fischli and David Weiss entitled "Questions". Then, quite naturally, other texts on the same topic came our way. Thus, we met John Cage, Ben Vautier and Forced Entertainment and we felt that we all have something in common: the need to ask questions and seek answers:</p>
     <p>► Is happiness looking for me in the wrong place?<br>
       ► Shall I move to another city and rent a house under a false name?<br>
@@ -1064,7 +1064,7 @@ $tran = array (
 
     'about_tit' => 'This is us',
     'about_desc' => '<p>The process of creating a performance of devised theatre inevitably draws on personal experience as well as on the ability to give new form to already existing material, in the framework of a collectively designed structure. We therefore choose to deal with issues that concern us all, issues that we can relate to, in our effort to talk about what it means to live in this particular moment and space.</p>',
-    'about_noiti' => ' <p>Over the last few years we have been actively engaged in producing devised and performance pieces, trying to develop our own individual method – a method which mainly aims at creating images rather than words. We have been moving away from traditional theatre, maintaining that the clear distinction between the audience and the actor hinders the growth of the feeling that we all belong to a community and we are all troubled by the same worries. <p>
+    'about_noiti' => '<p>Over the last few years we have been actively engaged in producing devised and performance pieces, trying to develop our own individual method – a method which mainly aims at creating images rather than words. We have been moving away from traditional theatre, maintaining that the clear distinction between the audience and the actor hinders the growth of the feeling that we all belong to a community and we are all troubled by the same worries. <p>
  <p>We do not wish to keep the spectator in the dark, we do not expect him to totally forget himself and immerse in the world of fiction. We do not want the spectator to lose sense of time and place. On stage, the actor plays a role, or multiple ones, without losing his identity. At the same time, the spectator, through his emotional participation, remains fully conscious of his being actively in communion with the event.</p>',
     'rehearsal' => 'While we rehearse...',
     'history_tit' => 'Our history',

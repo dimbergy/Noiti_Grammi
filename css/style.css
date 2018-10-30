@@ -82,6 +82,13 @@ h1.font-light,h2.font-light,h3.font-light,h4.font-light,h5.font-light,h6.font-li
 	color: #fff;
 }
 
+
+@media (min-width: 1440px) {
+    .col-xl-3 {
+        width: 25%;
+    }
+}
+
 .big-heading {
 	font-size: 48px;
 	font-weight: 200;
@@ -3410,6 +3417,10 @@ Parallax
     color: #555555;
 }
 
+.btn-info.btn-readmore:hover {
+    background-color: rgba(255, 235, 64, 0.7);
+}
+
 #parallax2{
 	background-image: url(../img/parallax/bird.jpg);
     background-position: center;
@@ -3542,6 +3553,19 @@ Parallax
     justify-content: flex-end;
     align-items: flex-end;
     height: 450px;
+}
+
+#current-production .nav.navbar-nav.navbar-right {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 580px) {
+    #current-production .row {
+
+        justify-content: center;
+    }
+
 }
 
 
@@ -3778,6 +3802,10 @@ Parallax
 
     font-weight: lighter;
     font-size: 1.8rem;
+}
+
+#current-production.parallax p {
+    font-weight: 300;
 }
 
 .parallax strong {

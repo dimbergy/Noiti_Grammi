@@ -6,11 +6,14 @@
         <div class="row">
 
 
-            <div class="text-left col-md-5 col-lg-4">
-                <p class="highlight-dark wow bounceInDown" data-wow-delay="0.5s"><?= $tran['coming_soon'] ?>
-                    <span class="pull-right">
-             <a href="projects#karaoke-index" role="button" class="btn btn-info btn-readmore"><?= $tran['read_more'] ?></a>
-          </span>
+            <div class="text-left col-sm-6 col-md-5 col-lg-4 col-xl-3 highlight-dark">
+                <p class="wow bounceInDown" data-wow-delay="0.5s"><?= $tran['coming_soon'] ?>
+                <ul class="nav navbar-nav navbar-right wow bounceInUp" data-wow-delay="0.5s">
+                <li>
+
+             <a href="<?= $project ?>#<?= $contents[1]['permalink'] ?>" role="button" class="btn btn-info btn-readmore"><?= $tran['read_more'] ?></a>
+          </li>
+                </ul>
                 </p>
 
 

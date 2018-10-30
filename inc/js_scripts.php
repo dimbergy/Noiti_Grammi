@@ -5,7 +5,6 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<!--<script src="js/jquery.sticky.js"></script>-->
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/jquery.scrollTo.js"></script>
 <script src="js/jquery.appear.js"></script>

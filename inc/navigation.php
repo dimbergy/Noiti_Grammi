@@ -38,6 +38,9 @@ if($active == '') {
 }
 
 
+$split = explode('#', $_COOKIE['anchor']);
+$test = $split[1];
+
 ?>
 
 
@@ -70,22 +73,13 @@ if($active == '') {
                                                                   <li class="active"><a href="/" ><?= $tran['home'] ?></a></li>
                                                                  <li class="dropdown nav-toggle">
                                                                         <a href="<?= $index ?>#works" class="dropdown-toggle" data-toggle="dropdown"><?= $tran['productions'] ?><b class="caret"></b></a>
-<ul class="dropdown-menu dropdown-menu-left">
-                                                                          <li><a href="<?= $project ?>#page-top"><?= $tran['exlibris'] ?></a></li>
-                                                                        <li><a href="<?= $project ?>#parallax-karaoke"><?= $tran['karaoke'] ?></a></li>
-                                                                             <li><a href="<?= $project ?>#parallax-clothes"><?= $tran['clothes'] ?></a></li>
-                                                                               <li><a href="<?= $project ?>#parallax-remember"><?= $tran['remember'] ?></a></li>
-                                                                            <li><a href="<?= $project ?>#parallax-redtoyota"><?= $tran['redtoyota'] ?></a></li>
-                                                                            <li><a href="<?= $project ?>#parallax-tail"><?= $tran['tail'] ?></a></li>
-                                                                            <li><a href="<?= $project ?>#parallax-stairs"><?= $tran['stairs'] ?></a></li>
-                                                                            <li><a href="<?= $project ?>#parallax-questions"><?= $tran['questions'] ?></a></li>
-                                                                            <li><a href="<?= $project ?>#parallax-bird"><?= $tran['bird'] ?></a></li>
-                                                                            <li><a href="<?= $project ?>#parallax-kvetch"><?= $tran['kvetch'] ?></a></li>
-                                                                            <li><a href="<?= $project ?>#parallax-dylm"><?= $tran['dylm'] ?></a></li>
-                                                                            <li><a href="<?= $project ?>#parallax-bigchance"><?= $tran['bigchance'] ?></a></li>
 
+                                                                     <ul class="dropdown-menu dropdown-menu-left">
+                                                                         <?php foreach ($contents as $content): ?>
+                                                                          <li><a href="<?= $project ?>#<?= $content['permalink'] ?>"><?= $content['title_upper'] ?></a></li>
+                                                                         <?php endforeach; ?>
+                                                                     </ul>
 
-                                                                        </ul>
                                                                   </li>
                                                                   <li><a href="<?= $index ?>#about"><?= $tran['team'] ?></a></li>
 

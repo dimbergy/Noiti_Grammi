@@ -59,19 +59,19 @@
 												<div class="item">
 																<a href="img/karaoke/karaoke_02.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
 												<div class="item">
-																<a href="img/karaoke/Karaoke_2.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
+																<a href="img/karaoke/karaoke_03.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
 
 												<div class="item">
-																<a href="img/karaoke/Karaoke_3.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
+																<a href="img/karaoke/karaoke_04.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
 												<div class="item">
-																<a href="img/karaoke/Karaoke_4.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
+																<a href="img/karaoke/karaoke_05.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
 												<div class="item">
-																<a href="img/karaoke/Karaoke_6.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
+																<a href="img/karaoke/karaoke_06.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
 
 												<div class="item">
-																<a href="img/karaoke/Karaoke_11.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
+																<a href="img/karaoke/karaoke_07.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
 												<div class="item">
-																<a href="img/karaoke/Karaoke_12.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
+																<a href="img/karaoke/karaoke_08.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
 
 
                     </div>
@@ -712,19 +712,19 @@
 												<div class="item">
 																<a href="img/karaoke/karaoke_02.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
 												<div class="item">
-																<a href="img/karaoke/Karaoke_2.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
+																<a href="img/karaoke/karaoke_03.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
 
 												<div class="item">
-																<a href="img/karaoke/Karaoke_3.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
+																<a href="img/karaoke/karaoke_04.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
 												<div class="item">
-																<a href="img/karaoke/Karaoke_4.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
+																<a href="img/karaoke/karaoke_05.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
 												<div class="item">
-																<a href="img/karaoke/Karaoke_6.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
+																<a href="img/karaoke/karaoke_06.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
 
 												<div class="item">
-																<a href="img/karaoke/Karaoke_11.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
+																<a href="img/karaoke/karaoke_07.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
 												<div class="item">
-																<a href="img/karaoke/Karaoke_12.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
+																<a href="img/karaoke/karaoke_08.jpg" title="Karaoke Night" data-lightbox-gallery="gallery-karaoke"></a></div>
 
 
                     </div>

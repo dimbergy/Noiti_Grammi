@@ -23,17 +23,46 @@
 
 
 
+    // $(function(){
+    //
+    //     $('.navbar-nav li a').on('click', function(event) {
+    //
+    //
+    //         var $test = $(this);
+    //         var x = $($test.attr('href'));
+    //
+    //         var y = (x.selector).replace('projects', '');
+    //
+    //         console.log(y);
+    //
+    //          $('#lang a').attr("href", function() { return $(this).attr("href") + y });
+    //
+    //         // event.preventDefault();
+    //
+    //     });
+    //
+    //
+    // });
+
+
     //jQuery for page scrolling feature - requires jQuery Easing plugin
     $(function() {
         $('.navbar-nav li a').bind('click', function(event) {
             var $anchor = $(this);
             var nav = $($anchor.attr('href'));
+
+
             if (nav.length) {
                 $('html, body').stop().animate({
                     scrollTop: $($anchor.attr('href')).offset().top-90
                 }, 1500, 'easeInOutExpo');
 
-                event.preventDefault();
+                $('#lang a').each(function() {
+
+                    $(this).attr("href", $(this).attr("href").split('#')[0] + nav.selector);
+                });
+
+                // event.preventDefault();
             }
         });
         $('a.totop,a#btn-scroll,a.btn-slide').bind('click', function(event) {
@@ -44,6 +73,7 @@
             event.preventDefault();
         });
     });
+
 
     // //home slider
     // jQuery('#valera-slippry').slippry({
@@ -171,6 +201,22 @@ $(document).ready(function () {
         }
     }
 
+
+
+    var hash=location.hash;
+
+
+    $('#lang a').each(function() {
+        $(this).attr("href", $(this).attr("href") + hash);
+    });
+
+
 });
+
+
+
+
+
+
 
 
