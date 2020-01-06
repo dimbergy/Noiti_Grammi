@@ -1,7 +1,6 @@
-
 <!--    SECTION PARTICLES-->
 
-<section id="intro" class="home-video text-light">
+<section id="<?= $introSection[0]['html_id'] ?>" class="home-video text-light">
     <div class="home-video-wrapper">
 
         <div class="homevideo-container" id="particle-canvas">
@@ -10,11 +9,11 @@
 
                 <div class="text-center video-caption">
                     <div class="wow bounceInDown" data-wow-offset="0" data-wow-delay="0.8s">
-                        <a href="/" class="todown"><img src="<?= $tran['logo'] ?>" width="380" alt="logo"></a>
+                        <a href="/" class="todown"><img src="<?= $introSection[0]['src'] ?>" width="350" alt="logo" class="logo-full"></a>
                     </div>
                     <div class="wow bounceInUp" data-wow-offset="0" data-wow-delay="0.8s">
-                        <div class="margintop-30">
-                            <a href="#current-production" class="totop"><i class="fa fa-angle-down fa-2x"></i></a>
+                        <div class="margintop-10">
+                            <a href="#current-production" class="totop"><i class="fa fa-angle-down fa-2x noitigrammi"></i></a>
                         </div>
                     </div>
                 </div>
@@ -25,7 +24,6 @@
             <script type="text/javascript">
                 var particleCanvas = new ParticleNetwork(canvasDiv, options);
             </script>
-
 
         </div>
 

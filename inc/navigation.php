@@ -53,7 +53,7 @@ $test = $split[1];
                                           <div class="col-md-2 col-sm-1 mob-logo">
                                                 <div class="row">
                                                       <div class="site-logo">
-                                                            <a href="/"><img src="<?= $gen['logo'] ?>" alt="noiti-logo" width="40"/></a>
+                                                            <a href="/"><img src="<?= $gen['logo'] ?>" alt="noiti-logo" class="navbar-logo"/></a>
                                                       </div>
                                                 </div>
                                           </div>

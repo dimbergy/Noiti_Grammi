@@ -1111,14 +1111,17 @@ $tran = array (
     'contact_tit' => 'Let\'s be in touch',
     'contact_desc' => 'Please, fill the form below if you want get news from us.',
     'address' => '7 Giannitson Str., Holargos | 15562 GR',
-    'success' => 'Your message has been sent. Thank you!',
+    'success' => 'Your message has been sent successfully. Thank you! You will be hearing from us shortly.',
+    'fail' => 'Message failed. Please, send an email to <a href="mailto:olga.pozeli@gmail.com">olga.pozeli@gmail.com</a>',
     'fname_ph' => 'First Name',
     'lname_ph' => 'Last Name',
-    'name_data-msg' => 'Please enter at least 4 chars',
-    'email_data-msg' => 'Please enter a valid email',
     'message_ph' => 'Leave your message',
-    'message_data-msg' => 'Please write something for us',
     'submit' => 'SEND',
+
+    'error_empty' => 'The field is required',
+    'error_email' => 'Please enter a valid email',
+    'error_min' => 'Please enter at least 3 chars',
+    'error_max' => 'You entered more than 100 chars',
 
 
 // FOOTER SECTION //

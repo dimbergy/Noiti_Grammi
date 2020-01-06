@@ -1,5 +1,32 @@
-@import "partials/mixins";
-@import "partials/variables";
+
+// VARIABLES //
+
+$family: 'Roboto', sans-serif;
+$weight: 300;
+$noitiColor: deeppink;
+
+
+
+// MIXINS //
+
+@mixin btnHover {
+
+  &:focus, &:visited, &:active {
+    outline: none;
+    box-shadow: none;
+
+  }
+}
+
+@mixin bodyBg {
+  background: #9CECFB;
+  background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+  background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+}
+
+
+
+// STYLES //
 
 
 :root {
@@ -24,6 +51,10 @@ td .btn.btn-danger {
   border-radius: 100%;
 }
 
+.modal-content {
+  padding-bottom: 1.5rem;
+}
+
 .modal-header, .modal-footer {
   border:none;
 }
@@ -37,6 +68,15 @@ td .btn.btn-danger {
   @include btnHover;
 }
 
+
+
+input, button, .form-control {
+  @include btnHover;
+}
+
+.form-control:focus {
+  border-color: #ced4da !important;
+}
 
 @media (min-width: 1440px) {
 
@@ -159,3 +199,224 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+
+
+// DASHBOARD //
+
+#shows {
+
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: rgba(255,255,255,0.1);
+  }
+
+  h3, h5 {
+    color: white;
+    font-weight: 400;
+  }
+
+
+  .modal-header h5 {
+    color: #000000;
+  }
+
+  input[type=checkbox] {
+
+    opacity: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+  }
+
+
+  [id^=activeCheck-]:checked+label:before {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 0;
+    background-image: url("/img/icons/check.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 2px solid snow;
+    color:snow;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    margin-top: 3px;
+  }
+
+
+
+
+  [id^=activeCheck-]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid snow;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    margin-top: 3px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+  }
+
+
+  #parallaxImg:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 30px;
+    z-index: 0;
+    background-image: url("/img/parallax/parallax-exlibris.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    margin-top: 3px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+  }
+
+  #parallaxImg:checked+label:before {
+    content: '\f00c';
+    font-family: FontAwesome;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 30px;
+    z-index: 0;
+    background-image: url("/img/parallax/parallax-exlibris.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    margin-top: 3px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+  }
+
+
+  .form-check-inline {
+    margin-right: 2.75rem;
+    margin-bottom: 1.75rem;
+  }
+
+
+  .form-check-label {
+
+    &.published-label {
+      margin-left: 8px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+
+  .project-img:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 40px;
+    z-index: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    margin-top: 3px;
+  }
+
+  .project-img:checked+label:before {
+    content: '\f00c';
+    font-family: FontAwesome;
+    color: white;
+    line-height: 2.3;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 40px;
+    z-index: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    margin-top: 3px;
+    opacity:0.7;
+  }
+
+
+  label.ref-file {
+    &:hover {
+      cursor: pointer;
+    }
+    &:after {
+      content: '\f0ee';
+      font-family: FontAwesome;
+      font-size: 25px;
+      position: absolute;
+      color: black;
+      margin-top: -5px;
+      margin-left: 10px;
+    }
+
+
+  }
+
+
+  label[for^=thumbs], label[for^=originals], label[for^=parallax] {
+    &:hover {
+      cursor: pointer;
+    }
+    &:after {
+      content: '\f0ee';
+      font-family: FontAwesome;
+      font-size: 25px;
+      position: absolute;
+      color: white;
+      margin-top: -5px;
+      margin-left: 10px;
+    }
+  }
+
+  input[type=file] {
+    opacity: 0;
+    position: absolute;
+    left:0;
+    width: 50%;
+  }
+
+
+  button[data-target^="#reference"] {
+    white-space: normal;
+  }
+
+
+
+}
+

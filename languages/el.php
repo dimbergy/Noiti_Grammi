@@ -1049,7 +1049,7 @@ $tran = array (
 
     'coming_soon' => 'To <span style="color:#FFEB40; font-size:1.9rem;"><strong>KARAOKE NIGHT</strong></span> επιστρέφει<br />από τις 20 Οκτωβρίου 2018<br />στο Θέατρο ΦΟΥΡΝΟΣ<br /><br />Σας περιμένουμε!&emsp;',
     'read_more' => 'ΠΕΡΙΣΣΟΤΕΡΑ',
-    'coming_soon_modal' => 'img/karaoke/karaoke_modal_GR.jpg',
+    'coming_soon_modal' => 'img/karaoke/exlibris_modal_GR.jpg',
 
 
 // PRODUCTIONS SECTION //
@@ -1134,14 +1134,18 @@ $tran = array (
     'contact_tit' => 'Ας μη χαθούμε',
     'contact_desc' => 'Συμπληρώστε τα στοιχεία σας για να σας ενημερώνουμε για τις δράσεις μας.',
     'address' => 'Γιαννιτσών 7, Χολαργός | 15562 GR',
-    'success' => 'Το μήνυμά σας στάθληκε με επιτυχία. Ευχαριστούμε πολύ!',
+    'success' => 'Το μήνυμά σας στάθληκε με επιτυχία. Ευχαριστούμε πολύ! Σύντομα θα λάβετε νέα μας.',
+    'fail' => 'Η αποστολή του μηνύματος απέτυχε. Παρακαλούμε, στείλτε email στο <a href="mailto:olga.pozeli@gmail.com">olga.pozeli@gmail.com</a>',
     'fname_ph' => 'Όνομα',
     'lname_ph' => 'Επώνυμο',
-    'name_data-msg' => 'Γράψτε, παρακαλώ, τουλάχιστον 4 χαρακτήρες',
-    'email_data-msg' => 'Δώστε, παρακαλώ, ένα έγκυρο email',
     'message_ph' => 'Γράψτε μας το μήνυμά σας',
-    'message_data-msg' => 'Γράψτε, παρακαλώ, κάτι για εμάς',
     'submit' => 'ΑΠΟΣΤΟΛΗ',
+
+    'error_empty' => 'Το πεδίο είναι υποχρεωτικό',
+    'error_email' => 'Δώστε, παρακαλώ, ένα έγκυρο email',
+    'error_min' => 'Γράψτε, παρακαλώ, τουλάχιστον 3 χαρακτήρες',
+    'error_max' => 'Γράψατε περισσότερους από 100 χαρακτήρες',
+
 
     // FOOTER SECTION //
 

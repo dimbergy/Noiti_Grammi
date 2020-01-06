@@ -1,16 +1,20 @@
 <?php
 
 $lang = 'el';
+$langID = 1;
 
 if (isset($_GET['language']) && $_GET['language'] != "") {
     $lang = $_GET['language'];
+    $langID = 2;
     setcookie('lang', $lang, time() + (3600 * 24 * 30), '/');
 }else if ($_GET['language'] == ""){
 
     if( $_SERVER['REQUEST_URI'] === '/en/') {
         $lang ='en';
+
     } else {
         $lang ='el';
+
     }
     setcookie('lang', $lang, time() + (3600 * 24 * 30), '/');
 } else {

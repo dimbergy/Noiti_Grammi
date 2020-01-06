@@ -640,7 +640,8 @@ $productions = array(
 
 $gen = array (
 
-    'logo' => 'img/logos/NoitiGrammiLogo.png',
+//    'logo' => 'img/logos/NoitiGrammiLogo.png',
+    'logo' => 'img/logos/noitigrammi_logo_small.jpg',
     'og-img' => 'img/karaoke/karaoke.jpg',
     'fournos_target' => 'http://www.fournos-culture.gr/',
     'fournos_phone' => '+30 210 6460748',

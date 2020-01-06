@@ -202,10 +202,22 @@ blockquote strong {
     color: darkslategrey;
 }
 
+.productions-section a {
+    color: #111;
+}
+
+
 .reference a:hover {
     color: #FE7A66;
 }
 
+.productions-section a:hover {
+    color: deeppink;
+}
+
+#redtoyota.productions-section a:hover {
+    color: rgba(255,255,255,0.7);
+}
 
 .reference p {
     margin-top: -15px;
@@ -415,6 +427,21 @@ color: #00562f;
     width:320px;
     margin-top: -10px;
 }
+
+
+.logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    width: 110px;
+    height: 80px;
+    object-fit: contain;
+}
+
 /* -------- Video ---------------- */
 
 .responsive-video {
@@ -462,6 +489,15 @@ height: 100%;
   padding: 5px 15px;
   font-size: 18px;
   line-height: 1em;
+}
+
+.navbar .site-logo {
+    position: relative;
+    margin: 0 0 0 10px;
+}
+
+.navbar .navbar-logo {
+    width: 50px;
 }
 
 .navbar-brand:focus {
@@ -1040,12 +1076,17 @@ filter: alpha(opacity = 0.6);
 
 #intro.home-video .overlay {
 	position: absolute;
-    left:50%;
-    margin-left: -190px;
+    /*left:50%;*/
+    left:0;
+    right: 0;
+    margin: auto;
+    /*margin-left: -190px;*/
 	height: 100%;
 	z-index: 60;
-	padding: 20% 0;
-
+	/*padding: 20% 0;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -1057,6 +1098,11 @@ filter: alpha(opacity = 0.6);
 	width: 100%;
 	height: 100%;
 	position: absolute;
+}
+
+.home-video-wrapper .logo-full {
+    box-shadow: 0 0 7px grey;
+    border-radius: 4px;
 }
 
 .bs-video {
@@ -1696,6 +1742,10 @@ filter: alpha(opacity = 0.6);
     font-weight: 400;
 }
 
+
+#link-masonry .masonry-item:last-child {
+    display: none;
+}
 
 @media screen and (min-width: 992px) {
 
@@ -2348,6 +2398,12 @@ strong {
 }
 
 
+#redtoyota th>.venue-link:hover {
+
+    color: rgba(255,255,255,0.7);
+}
+
+
 table.venue>thead>tr>th {
 
     border-bottom-color: deeppink;
@@ -2401,6 +2457,16 @@ table.venue>tfoot>tr>td {
 
 @media (max-width: 991px) {
 
+
+    .home-video-wrapper .logo-full {
+        width: 50%;
+    }
+
+    .logo-img {
+        width: 100px;
+        height: 70px;
+    }
+
     a[data-toggle=tab].tab-item {
 
         padding-left: 3rem;
@@ -2425,6 +2491,16 @@ table.venue>tfoot>tr>td {
         display:flex;
         flex-direction: column-reverse;
 
+    }
+
+    .home-video-wrapper .logo-full {
+        width: 30%;
+    }
+
+    .logo-img {
+        width: 110px;
+        height: 80px;
+        padding: 5px;
     }
 
     a[data-toggle=tab] i {
@@ -2755,6 +2831,7 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
     margin: 0 0 20px;
     font-weight:400;
     font-size:13px;
+    text-align: left;
 }
 
 #sendmessage {
@@ -2763,8 +2840,8 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
     display:none;
     text-align:center;
     padding:15px;
-    font-weight:600;
-    margin-bottom:15px;
+    font-weight:400;
+    margin:0 15px 15px 15px;
 }
 
 #errormessage {
@@ -2773,8 +2850,12 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
     border:1px solid red;
     text-align:center;
     padding:15px;
-    font-weight:600;
-    margin-bottom:15px;
+    font-weight:400;
+    margin:0 15px 15px 15px;
+}
+
+#errormessage a {
+    color: green;
 }
 
 #sendmessage.show, #errormessage.show, .show {
@@ -3506,6 +3587,10 @@ Parallax
 
     .fixed-attachment {
         background-attachment: scroll;
+    }
+
+    .contact-form {
+        margin-top: 7rem;
     }
 }
 
@@ -4408,10 +4493,15 @@ a.btn:focus{
 	#navigation {
 		padding: 20px 0;
 	}
-	.site-logo{
-		margin: 0 0 0 30px;
+	.navbar .site-logo{
 		float:none;
+        top: 7px;
 	}
+
+    .navbar .site-logo .navbar-logo {
+        width: 40px;
+    }
+
 	.navbar-custom ul.nav li a {
 		color: #eee;
 	}
@@ -4442,6 +4532,7 @@ a.btn:focus{
 		font-size: 16px;
 		color: #555555;
         background: #fff;
+        margin-right: auto;
 	}
 
 	.navbar-custom .nav {
