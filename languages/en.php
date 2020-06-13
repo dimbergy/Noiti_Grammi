@@ -1110,7 +1110,7 @@ $tran = array (
 
     'contact_tit' => 'Let\'s be in touch',
     'contact_desc' => 'Please, fill the form below if you want get news from us.',
-    'address' => '7 Giannitson Str., Holargos | 15562 GR',
+    'address' => '14 Faneromenis Str., Holargos | 15561 GR',
     'success' => 'Your message has been sent successfully. Thank you! You will be hearing from us shortly.',
     'fail' => 'Message failed. Please, send an email to <a href="mailto:olga.pozeli@gmail.com">olga.pozeli@gmail.com</a>',
     'fname_ph' => 'First Name',

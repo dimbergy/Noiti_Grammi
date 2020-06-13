@@ -28,21 +28,28 @@ $replace = str_replace('en/', '', $path);
 $components = explode('/', $replace);
 $active = $components[1];
 
+if($langID == 1) {
+    $nav = '';
+} else {
+    $nav = 'en/';
+}
+
 if($active == '') {
     $project = 'projects';
     $index = '';
 } else {
 
-    $project ='';
-    $index ='/';
+    $project ='' . $nav ;
+    $index ='/' . $nav ;
 }
 
 
 $split = explode('#', $_COOKIE['anchor']);
 $test = $split[1];
 
-?>
+$navigation = $productions->getNavigation($langID);
 
+?>
 
 <!-- NAVIGATION -->
 
@@ -70,23 +77,26 @@ $test = $split[1];
                                                       <!-- Collect the nav links, forms, and other content for toggling -->
                                                       <div class="collapse navbar-collapse" id="menu">
                                                             <ul class="nav navbar-nav navbar-right">
-                                                                  <li class="active"><a href="/" ><?= $tran['home'] ?></a></li>
-                                                                 <li class="dropdown nav-toggle">
-                                                                        <a href="<?= $index ?>#works" class="dropdown-toggle" data-toggle="dropdown"><?= $tran['productions'] ?><b class="caret"></b></a>
 
-                                                                     <ul class="dropdown-menu dropdown-menu-left">
-                                                                         <?php foreach ($contents as $content): ?>
-                                                                          <li><a href="<?= $project ?>#<?= $content['permalink'] ?>"><?= $content['title_upper'] ?></a></li>
-                                                                         <?php endforeach; ?>
-                                                                     </ul>
+                                                                <?php if(count($navigation)) {
+                                                                    foreach ($navigation as $navItem) {
+                                                                        if ($navItem['html_id'] == 'works')  { ?>
+                                                                            <li class="dropdown nav-toggle">
+                                                                                <a href="<?= $index ?>#<?= $navItem['html_id'] ?>" class="dropdown-toggle" data-toggle="dropdown"><?= $navItem['navigation'] ?><b class="caret"></b></a>
 
-                                                                  </li>
-                                                                  <li><a href="<?= $index ?>#about"><?= $tran['team'] ?></a></li>
+                                                                                <ul class="dropdown-menu dropdown-menu-left">
+                                                                                    <?php foreach ($projects as $key => $production) { ?>
+                                                                                        <li><a href="<?= $project ?>#<?= $key == 0 ? 'page-top' : $production['permalink'] ?>"><?= $production['navigation'] ?></a></li>
+                                                                                    <?php } ?>
+                                                                                </ul>
+                                                                            </li>
+                                                                        <?php } else { ?>
 
-								                                <li><a href="<?= $index ?>#service"><?= $tran['links'] ?></a></li>
+                                                                            <li><a href="<?= $index ?><?= $navItem['html_id'] == 'current-production' ? '' : '#' . $navItem['html_id'] ?>" ><?= $navItem['navigation'] ?></a></li>
 
-                                                                <li><a href="<?= $index ?>#contact"><?= $tran['contact'] ?></a></li>
-
+                                                                        <?php }
+                                                                    }
+                                                                } ?>
 
                                                                 <li id="lang" class="btn-group">
 

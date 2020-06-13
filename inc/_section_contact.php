@@ -22,7 +22,7 @@
                 <div class="loction-info white">
                     <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i><?= $tran['address'] ?></p>
                     <p><a href="mailto:olga.pozeli@gmail.com"><i class="fa fa-envelope fa-fw pull-left fa-2x"></i><span>olga.pozeli@gmail.com</span></a></p>
-                    <p><a href="tel:00302106544242"><i class="fa fa-phone fa-fw pull-left fa-2x"></i>+30 210 6544242</a></p>
+<!--                    <p><a href="tel:"><i class="fa fa-phone fa-fw pull-left fa-2x"></i></a></p>-->
                     <p><a href="tel:00306936456846"><i class="fa fa-mobile-phone fa-fw pull-left fa-2x"></i>+30 693 6456846</a></p>
                 </div>
             </div>

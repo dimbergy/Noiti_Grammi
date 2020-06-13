@@ -11,6 +11,8 @@ include ('database/parallax.database.php');
 
 $pageID = 2;
 
+$projects = $productions->getAllProductions($langID);
+
 ?>
 
 <!DOCTYPE html>
@@ -27,8 +29,6 @@ $pageID = 2;
 <?php include ('inc/footer.php'); ?>
 
 <?php include ('inc/js_scripts.php'); ?>
-
-
 
 </body>
 

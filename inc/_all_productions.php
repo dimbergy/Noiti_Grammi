@@ -1,7 +1,5 @@
 <?php
 
-$projects = $productions->getAllProductions($langID);
-
 foreach ($projects as $project):
 
     $projectID = $project['id'];
