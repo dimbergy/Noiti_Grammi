@@ -11,22 +11,23 @@ class Languages extends Dbh
 
     protected function getLanguages() {
 
+        $languages = array();
 
         $sql = "SELECT * FROM languages";
         $result = $this->connect()->query($sql);
         $numRows = $result->num_rows;
 
-        if($numRows > 0):
+        if($numRows > 0) {
 
-            while($row = $result->fetch_assoc()):
+            while ($row = $result->fetch_assoc()) {
 
                 $languages[] = $row;
 
-            endwhile;
+            }
 
             return $languages;
 
-        endif;
+        }
 
     }
 }

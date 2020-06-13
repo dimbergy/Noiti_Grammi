@@ -11,21 +11,23 @@ class Meta extends Dbh
 
     public function getMeta($pageID, $langID) {
 
+        $metas = array();
+
         $sql = "SELECT * FROM meta WHERE id_page=".$pageID." AND id_lang=".$langID;
         $result = $this->connect()->query($sql);
         $numRows = $result->num_rows;
 
-        if($numRows > 0):
+        if($numRows > 0) {
 
-            while($row = $result->fetch_assoc()):
+            while ($row = $result->fetch_assoc()) {
 
                 $metas[] = $row;
 
-            endwhile;
+            }
 
             return $metas;
 
-        endif;
+        }
 
     }
 

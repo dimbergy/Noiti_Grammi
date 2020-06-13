@@ -11,42 +11,46 @@ class References extends Dbh
 
     public function getProductionsReferences($postID, $langID) {
 
+        $productionsRef = array();
+
         $sql = "SELECT * FROM references2languages WHERE id_page=2 AND id_post=".$postID." AND id_lang=".$langID." ORDER BY ref_tabindex ASC";
         $result = $this->connect()->query($sql);
         $numRows = $result->num_rows;
 
-        if($numRows > 0):
+        if($numRows > 0) {
 
-            while($row = $result->fetch_assoc()):
+            while ($row = $result->fetch_assoc()) {
 
                 $productionsRef[] = $row;
 
-            endwhile;
+            }
 
             return $productionsRef;
 
-        endif;
+        }
 
     }
 
 
     public function getAboutReferences($langID) {
 
+        $pagesRef = array();
+
         $sql = "SELECT * FROM references2languages WHERE id_page=1 AND id_post=3 AND id_subpost=4 AND id_lang=".$langID." ORDER BY ref_tabindex ASC";
         $result = $this->connect()->query($sql);
         $numRows = $result->num_rows;
 
-        if($numRows > 0):
+        if($numRows > 0) {
 
-            while($row = $result->fetch_assoc()):
+            while ($row = $result->fetch_assoc()) {
 
                 $pagesRef[] = $row;
 
-            endwhile;
+            }
 
             return $pagesRef;
 
-        endif;
+        }
 
     }
 
