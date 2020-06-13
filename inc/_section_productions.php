@@ -24,12 +24,10 @@
         <div class="container marginbot-50">
             <div class="row row-offcanvas row-offcanvas-left">
 
-
                 <div class="col-xs-12 col-sm-12 col-md-12 content-column">
 
                     <div class="grid">
                         <div class="row">
-
 
                             <?php foreach ($projects as $index => $project) { ?>
 
@@ -72,17 +70,11 @@
 
         <div class="row">
 
-
-
-            <?php
-
-            foreach ($projects as $project):
+            <?php foreach ($projects as $project) {
 
                 $projectID = $project['id'];
                 $thumbs = $media->getProductionsPhotos($projectID, 3);
-                $images = $media->getProductionsPhotos($projectID, 4);
-
-                ?>
+                $images = $media->getProductionsPhotos($projectID, 4); ?>
 
                 <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3" >
 
@@ -100,18 +92,18 @@
                         </div>
 
 
-                        <?php foreach ($images as $image): if($image['src'] != $images[0]['src']): ?>
+                        <?php foreach ($images as $image) { if($image['src'] != $images[0]['src']) { ?>
 
                             <div class="item">
                                 <a href="<?= $image['src'] ?>" title="<?= $project['title'] ?>" data-lightbox-gallery="gallery-<?= $project['html_id'] ?>"></a>
                             </div>
 
-                        <?php endif; endforeach; ?>
+                        <?php } } ?>
 
                     </div>
                 </div>
 
-            <?php endforeach; ?>
+            <?php } ?>
 
 
         </div>
