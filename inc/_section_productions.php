@@ -31,19 +31,19 @@
                         <div class="row">
 
 
-                            <?php foreach ($projects as $index => $project): ?>
+                            <?php foreach ($projects as $index => $project) { ?>
 
                                 <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 masonry-item">
-                                    <div class="box-masonry"><a href="projects#<?= $project['permalink'] ?>" title="<?= $project['title'] ?>" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="<?= $productionsMasonry[$index]['src'] ?>" alt="<?= $project['title'] ?>" class="img-responsive"></a>
+                                    <div class="box-masonry"><a href="projects#<?= $index == 0 ? 'page-top' : $project['permalink'] ?>" title="<?= $project['title'] ?>" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="<?= $productionsMasonry[$index]['src'] ?>" alt="<?= $project['title'] ?>" class="img-responsive"></a>
                                         <div class="box-masonry-hover-text-header">
                                             <h5><?= $project['date'] ?></h5>
-                                            <h4> <a href="projects#<?= $project['permalink'] ?>" lang="<?= $lang ?>"><?= $project['title'] ?></a></h4>
+                                            <h4> <a href="projects#<?= $index == 0 ? 'page-top' : $project['permalink'] ?>" lang="<?= $lang ?>"><?= $project['navigation'] ?></a></h4>
 
                                         </div>
                                     </div>
                                 </div>
 
-                            <?php endforeach; ?>
+                            <?php } ?>
 
 
                         </div>
