@@ -840,7 +840,7 @@ td {
 
 .home-section {
     padding-top: 150px;
-    padding-bottom: 110px;
+    padding-bottom: 150px;
 	display:block;
     position:relative;
     z-index:120;
@@ -3572,14 +3572,11 @@ Parallax
 }
 
 
-/*#parallax-karaoke.fixed-attachment {*/
-    /*background-attachment: scroll;*/
-/*}*/
-
 .fixed-attachment {
 
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
 }
 
 

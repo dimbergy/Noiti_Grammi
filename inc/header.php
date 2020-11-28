@@ -51,15 +51,17 @@ $parallaxCss = $css->getParallaxCss();
     <style>
 
 
-    <?php foreach ($pagesCss as $pageCss): if(!empty($pageCss['bg_color'])): ?>
+    <?php foreach ($pagesCss as $pageCss) {
+        if(!empty($pageCss['bg_color'])){ ?>
 
     #<?= $pageCss['html_id'] ?> {
         background: <?= $pageCss['bg_color'] ?>;
     }
 
-    <?php endif; endforeach; ?>
+    <?php }
+    } ?>
 
-    <?php foreach ($parallaxCss as $pxCss): ?>
+    <?php foreach ($parallaxCss as $pxCss){ ?>
 
     #<?= $pxCss['html_id'] ?> {
         background-image: url("<?= $pxCss['src'] ?>");
@@ -69,9 +71,9 @@ $parallaxCss = $css->getParallaxCss();
         color: <?= $pxCss['blockquote_color'] ?>;
     }
 
-    <?php endforeach; ?>
+    <?php } ?>
 
-    <?php foreach ($productionsCss as $productionCss): ?>
+    <?php foreach ($productionsCss as $productionCss){  ?>
 
     #<?= $productionCss['permalink'] ?> {
         background-image: url("<?= $productionCss['src'] ?>");
@@ -107,7 +109,7 @@ $parallaxCss = $css->getParallaxCss();
         background: <?= $productionCss['bg_footer'] ?>;
     }
 
-    <?php endforeach; ?>
+    <?php } ?>
 
     </style>
 
